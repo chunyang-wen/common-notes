@@ -1,0 +1,6 @@
+PROJECT(Hello)
+
+ADD_SUBDIRECTORY(src bin)
+
+ADD_TEST(mytest ${PROJECT_BINARY_DIR}/bin/main)
+ENABLE_TESTING()

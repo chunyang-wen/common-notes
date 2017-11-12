@@ -1,0 +1,5 @@
+PROJECT(HelloLib)
+
+ADD_SUBDIRECTORY(lib libhello)
+
+INSTALL(FILES lib/hello.h DESTINATION ${PROJECT_BINARY_DIR}/include)
