@@ -6,6 +6,8 @@ import mxnet as mx
 from mxnet import gluon, autograd, ndarray, sym
 import numpy as np
 
+# DataLoader: DataSource --> Dataset
+
 train_data = mx.gluon.data.DataLoader(mx.gluon.data.vision.MNIST(train=True, transform=lambda data, label: (data.astype(np.float32)/255, label)),
         batch_size=32, shuffle=True)
 test_data = mx.gluon.data.DataLoader(mx.gluon.data.vision.MNIST(train=False, transform=lambda data, label: (data.astype(np.float32)/255, label)),

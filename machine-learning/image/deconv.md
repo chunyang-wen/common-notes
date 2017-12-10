@@ -20,6 +20,6 @@ After convolution, we reduce the images from W\*H to m\*n (Assume that padding t
 
 ### What is deconv
 
-![Transpose](t-conv.png)
+![Transpose](./images/t-conv.png)
 
 We show
