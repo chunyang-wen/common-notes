@@ -1,0 +1,19 @@
+digraph graphname {
+  "xx/initial_value" [label="Const"];
+  "xx" [label="VariableV2"];
+  "xx/Assign" [label="Assign"];
+  "xx" -> "xx/Assign";
+  "xx/initial_value" -> "xx/Assign";
+  "xx/read" [label="Identity"];
+  "xx" -> "xx/read";
+  "xx_1/initial_value" [label="Const"];
+  "xx_1" [label="VariableV2"];
+  "xx_1/Assign" [label="Assign"];
+  "xx_1" -> "xx_1/Assign";
+  "xx_1/initial_value" -> "xx_1/Assign";
+  "xx_1/read" [label="Identity"];
+  "xx_1" -> "xx_1/read";
+  "add" [label="Add"];
+  "xx/read" -> "add";
+  "xx_1/read" -> "add";
+}
